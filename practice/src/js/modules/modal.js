@@ -9,7 +9,7 @@ export const modal = () => {
 
     if(target == openModal) {
       modal.showModal();
-    } else if (target == modal || closeModal) {
+    } else if (target === modal || target === closeModal) {
       modal.close();
     }
   });
