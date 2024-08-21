@@ -1,1 +1,3 @@
-console.log("success!");
+import { modal } from "./modules/modal";
+
+modal();
