@@ -14,6 +14,7 @@
         <div class="p-2.5 border-t border-b">
           <h2 class="mb-2.5">modal</h2>
           <button type="button" data-modal-open class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">モーダルを開く</button>
+          <button type="button" data-modal-sub-open class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">モーダルを開く</button>
           <dialog data-modal class="relative bg-white rounded-lg">
             <div class="flex items-center justify-between p-4 border-b">
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Humpty Dumpty</h3>
@@ -25,6 +26,20 @@
             </div>
             <p class="p-4 text-base leading-relaxed text-gray-500">Humpty Dumpty sat on a wall,Humpty Dumpty had a great fall.All the King's horses, And all the King's men Couldn't put Humpty together again.Humpty Dumpty sat on a wall,Humpty Dumpty had a great fall.All the King's horses, And all the King's men Couldn't put Humpty together again.</p>
           </dialog>
+          <div data-modal-sub class="hidden">
+            <div data-modal-sub-overlay class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+            <div data-modal-sub-content class="relative bg-white rounded-lg z-20">
+              <div class="flex items-center justify-between p-4 border-b">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Humpty Dumpty</h3>
+                <button type="button" data-modal-sub-close class="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                </button>
+              </div>
+              <p class="p-4 text-base leading-relaxed text-gray-500">Humpty Dumpty sat on a wall,Humpty Dumpty had a great fall.All the King's horses, And all the King's men Couldn't put Humpty together again.Humpty Dumpty sat on a wall,Humpty Dumpty had a great fall.All the King's horses, And all the King's men Couldn't put Humpty together again.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
