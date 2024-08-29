@@ -5,12 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>15SS</title>
-    <link rel="stylesheet" href="/public/css/output.css">
+    <link rel="stylesheet" href="/dist/css/output.css">
   </head>
   <body>
     <div id="app">
       <div class="p-2.5">
-        <h1 class="">Javascript Practice</h1>
+        <h1 class="mb-2.5">Javascript Practice</h1>
+        <div class="p-2.5 border-t border-b">
+          <h2 class="mb-2.5">accordion</h2>
+          <div class="border-b border-gray-200">
+            <button class="relative flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl hover:bg-gray-100 before:absolute before:right-5 before:w-2 before:h-2 before:border-r-2 before:border-b-2 before:border-gray-500 before:rotate-45" data-accordion-trigger>Cinderella</button>
+            <div class="hidden">
+              <div class="p-5 border border-b-0 border-gray-200">
+                <p class="text-gray-500">Once upon a time, Cinderella had a step-mother and two step-sisters move into her house. Each of them was cruel, and every day they did mean things to Cinderella.</p>
+              </div>
+            </div>
+            <button class="relative flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 hover:bg-gray-100 before:absolute before:right-5 before:w-2 before:h-2 before:border-r-2 before:border-b-2 before:border-gray-500 before:rotate-45" data-accordion-trigger>Little Red Riding Hood</button>
+            <div class="hidden">
+              <div class="p-5 border border-b-0 border-gray-200">
+                <p class="text-gray-500">Once upon a time, Little Red Riding Hood was on her way to visit her sick grandmother, when a Big Bad Wolf came along. “You should pick some flowers,” he said. So off wandered Little Red Riding Hood.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/js/main.js"></script>

@@ -1,1 +1,3 @@
-console.log("success!");
+import { accordion } from "./modules/accordion";
+
+accordion();
