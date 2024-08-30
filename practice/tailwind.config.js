@@ -2,8 +2,15 @@
 export default {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      rotate: {
+        '225': '225deg',
+      }
+    },
   },
   plugins: [],
+  safelist: [
+    'before:rotate-225',
+  ]
 }
 

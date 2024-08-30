@@ -8,8 +8,12 @@ export const accordion = () => {
 
       if(!isHidden) {
         accordionContent.classList.add('hidden');
+        trigger.classList.remove('before:rotate-225');
+        trigger.classList.add('before:rotate-45');
       } else {
         accordionContent.classList.remove('hidden');
+        trigger.classList.remove('before:rotate-45');
+        trigger.classList.add('before:rotate-225');
       }
     });
   });
